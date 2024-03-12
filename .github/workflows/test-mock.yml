@@ -1,0 +1,14 @@
+name: 1 - test mock front
+
+on:
+  push:
+    branches: ["1-mock-livre"]
+
+jobs:
+  tests:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📌 Checkout Repo
+        uses: actions/checkout@v3
